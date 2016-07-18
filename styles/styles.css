@@ -1,0 +1,60 @@
+
+body {
+  background-color: #050505;
+  background-image: url("../images/lightning-bg.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  color: #FFFFFF;
+  font-size: 111%;
+  font-family: 'Indie Flower', sans-serif;
+}
+
+.overlay {
+  background-color: transparent;
+  background-color: rgba(100, 100, 100, 0.4);
+  max-width: 48em;
+  margin: 1em auto;
+  padding: 1em;
+}
+
+h1 {
+  font-family: 'Bangers', serif;
+  font-size: 4em;
+  text-transform: uppercase;
+  line-height: 0.6em;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  font-family: 'Bangers', serif;
+  font-size: 3em;
+  line-height: 1.25em;
+}
+
+.subtitle {
+  display: inline-block;
+  font-size: 0.5em;
+}
+
+a, a:visited {
+  color: #2274A5;
+}
+
+.intro {
+  margin: 2.5em 0;
+  font-size: 1.25em;
+}
+
+.talks {
+  margin-bottom: 2em;
+}
+
+.coming-soon {
+  font-size: 0.85em;
+  color: #BDBDBD;
+  padding: 1em;
+  text-align: center;
+}

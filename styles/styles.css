@@ -12,6 +12,11 @@ body {
   font-family: 'Indie Flower', sans-serif;
 }
 
+p {
+  line-height: 30px;
+  font-size: 1.25em;
+}
+
 .overlay {
   background-color: transparent;
   background-color: rgba(100, 100, 100, 0.4);
@@ -46,6 +51,7 @@ a, a:visited {
 .intro {
   margin: 2.5em 0;
   font-size: 1.25em;
+  line-height: 30px;
 }
 
 .talks {

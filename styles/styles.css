@@ -19,7 +19,7 @@ p {
 
 .overlay {
   background-color: transparent;
-  background-color: rgba(10, 10, 10, 0.7);
+  background-color: rgba(10, 10, 10, 0.85);
   max-width: 50em;
   margin: 0 auto;
   padding: 2em;
@@ -40,13 +40,28 @@ h2 {
   line-height: 1.25em;
 }
 
+h3 {
+  font-family: 'Lakki Reddy', serif;
+  font-size: 1.75em;
+  line-height: 1.25em;
+}
+
 .subtitle {
   display: inline-block;
   font-size: 0.5em;
 }
 
+h3 .subtitle {
+  color: rgba(255, 255, 255, 0.4);
+}
+
 a, a:visited {
-  color: #2274A5;
+  color: #E83F6F;
+  text-decoration: none;
+}
+
+a:hover, a:visited:hover {
+  text-decoration: underline;
 }
 
 .intro {
@@ -56,7 +71,17 @@ a, a:visited {
 }
 
 .talks {
-  margin-bottom: 2em;
+  margin-bottom:2em;
+  padding: 2em 0;
+}
+
+.talk {
+  margin: 0 auto 2em auto;
+  max-width: 40em;
+}
+
+.talk p {
+  text-align: justify;
 }
 
 .coming-soon {
@@ -64,4 +89,36 @@ a, a:visited {
   color: #BDBDBD;
   padding: 1em;
   text-align: center;
+}
+
+.rainbow {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: -webkit-gradient(linear,  left top,  right bottom,
+      color-stop(0.00, #FFD166),
+      color-stop(33.333%, #E83F6F),
+      color-stop(66.666%, #06D6A0),
+      color-stop(1.00, #118AB2));
+}
+
+.color-1 {
+  color: #FFD166;
+}
+
+.color-2 {
+  color: #E83F6F;
+}
+
+.color-3 {
+  color: #06D6A0;
+}
+
+.color-4 {
+  color: #118AB2;
+}
+
+footer {
+  margin-top: 2em;
+  font-size: 0.85em;
+  line-height: 1.25em;
 }

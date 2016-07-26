@@ -1,5 +1,7 @@
 
 (function() {
+  var submissionsDone = true;
+
   // Parse true
   function parseBoolean(value) {
     return (value && (value === true || (value && value.toLowerCase && value.toLowerCase().indexOf("y") !== -1))) ? true : false;
@@ -15,6 +17,7 @@
       // Convert some data
       data.map(function(d) {
         d.approved = parseBoolean(d["Approved to be listed"]);
+        d.accepted = parseBoolean(d["Accepted to present"]);
       });
 
       // See if there are any approved
@@ -38,6 +41,11 @@
 
         // Only approved
         if (!d.approved) {
+          return;
+        }
+
+        // accepted
+        if (submissionsDone && !d.accepted) {
           return;
         }
 

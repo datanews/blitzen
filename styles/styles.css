@@ -77,7 +77,19 @@ a:hover, a:visited:hover {
 
 .talk {
   margin: 0 auto 2em auto;
-  max-width: 40em;
+}
+
+.talk .order {
+  width: 25%;
+  float: left;
+  font-size: 5em;
+  color: #06D6A0;
+  text-align: center;
+}
+
+.talk .description {
+  width: 75%;
+  float: right;
 }
 
 .talk p {
@@ -135,4 +147,26 @@ footer {
   .large-only {
     display: none;
   }
+}
+
+@media (max-width: 450px) {
+  .talk p {
+    display: none;
+  }
+
+  .talk .order {
+    font-size: 2em;
+  }
+}
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+.cf:after {
+    clear: both;
+}
+.cf {
+    *zoom: 1;
 }

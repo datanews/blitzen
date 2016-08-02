@@ -52,8 +52,9 @@
         // Make html
         div.classList.add("talk");
         div.classList.add("cf");
-        div.innerHTML = "<div class='order'>" + d["Order"] + "</div>" +
-          "<div class='description'><h3 class='color-4'>" + d["Title of presentation"] +
+        div.innerHTML = "<div class='order'>" + d.Order + "</div>" +
+          "<div class='description'><h3 class='color-4'>" +
+          (d.Link ? "<a href='" + d.Link + "' target='_blank'>" + d["Title of presentation"] + "</a>" : d["Title of presentation"]) +
           " <span class='subtitle'>by " + d["Name of presenter(s)"] + "</span></h3>" +
           "<p>" + d["Description of presentation"]  + "</p></div>";
         talksEl.appendChild(div);
